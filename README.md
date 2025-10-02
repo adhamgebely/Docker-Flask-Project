@@ -3,12 +3,12 @@
 A simple project to demonstrate running a Flask web application inside a Docker container. The goal is to build a minimal Flask app, containerize it, and run it locally.
 
 ## 📂 Project Structure
-
+```
 Docker-Flask-Project/
- ├── hello.py \n
+ ├── hello.py 
  ├── requirements.txt
  └── Dockerfile
-
+```
 
 ## ⚙️ How to Run
 ### 1️⃣ Clone the Repository 
