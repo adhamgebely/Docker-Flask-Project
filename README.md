@@ -28,14 +28,12 @@ In your browser, go to 👉 http://localhost:5000
 ![alt text](<Screenshot 2025-10-02 173909.png>)
 
 ## 🐳 Dockerfile Explained
-FROM → base image
-
-WORKDIR → working directory inside the container
-
-COPY → copies files into container
-
-RUN → installs dependencies
-
-EXPOSE → makes the app accessible on port 5000
-
-CMD → command to start the Flask app
+``` bash
+FROM python:latest              # Use the latest official Python base image
+WORKDIR /app                    # Set the working directory inside the container
+COPY requirements.txt .         # Copy the requirements file into the container
+RUN pip install -r requirements.txt   # Install all dependencies listed in requirements.txt
+COPY hello.py .                 # Copy the Flask application file into the container
+EXPOSE 5000                     # Expose port 5000 for external access
+CMD python hello.py             # Command to start the Flask app when the container runs
+```
