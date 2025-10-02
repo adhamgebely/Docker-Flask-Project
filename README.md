@@ -25,3 +25,4 @@ docker run -d -p 5000:5000 flask-demo
 ```
 ### 4️⃣ Open the App 
 In your browser, go to 👉 http://localhost:5000
+![alt text](<Screenshot 2025-10-02 173909.png>)
