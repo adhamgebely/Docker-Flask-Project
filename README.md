@@ -26,3 +26,16 @@ docker run -d -p 5000:5000 flask-demo
 ### 4️⃣ Open the App 
 In your browser, go to 👉 http://localhost:5000
 ![alt text](<Screenshot 2025-10-02 173909.png>)
+
+## 🐳 Dockerfile Explained
+FROM → base image
+
+WORKDIR → working directory inside the container
+
+COPY → copies files into container
+
+RUN → installs dependencies
+
+EXPOSE → makes the app accessible on port 5000
+
+CMD → command to start the Flask app
