@@ -1,0 +1,25 @@
+# Dockerized Flask Demo 🐳
+
+A simple project to demonstrate running a Flask web application inside a Docker container. The goal is to build a minimal Flask app, containerize it, and run it locally.
+
+## 📂 Project Structure
+
+Docker-Flask-Project/
+ ├── hello.py
+ ├── requirements.txt
+ └── Dockerfile
+
+## ⚙️ How to Run
+### 1️⃣ Clone the Repository 
+``` bash 
+git clone https://github.com/adhamgebely/Docker-Flask-Project.git
+cd Docker-Flask-Project
+
+### 2️⃣ Build the Docker Image
+
+docker build -t flask-demo .
+
+### 3️⃣ Run the Container
+docker run -d -p 5000:5000 flask-demo
+
+### 4️⃣ Open the App 
